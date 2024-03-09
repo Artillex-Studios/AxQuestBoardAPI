@@ -1,0 +1,8 @@
+name: AxQuestBoard
+version: '${project.version}'
+main: com.artillexstudios.axquestboard.AxQuestBoard
+api-version: '1.13'
+folia-supported: true
+
+softdepend:
+  - PlaceholderAPI
