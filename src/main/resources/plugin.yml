@@ -1,7 +1,7 @@
 name: AxQuestBoard
 version: '${project.version}'
 main: com.artillexstudios.axquestboard.AxQuestBoard
-api-version: '1.13'
+api-version: '1.19'
 folia-supported: true
 
 softdepend:

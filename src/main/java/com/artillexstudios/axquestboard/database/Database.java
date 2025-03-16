@@ -5,6 +5,7 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 
 public interface Database {
 
@@ -18,11 +19,11 @@ public interface Database {
 
     UUID getUserById(int id);
 
-    int getPoints(@NotNull UUID uuid);
+    CompletableFuture<Integer> getPoints(@NotNull UUID uuid);
 
-    void setPoints(@NotNull UUID uuid, int amount);
+    CompletableFuture<Boolean> setPoints(@NotNull UUID uuid, int amount);
 
-    void modifyPoints(@NotNull UUID uuid, int amount);
+    CompletableFuture<Boolean> modifyPoints(@NotNull UUID uuid, int amount);
 
     void saveQuest(@NotNull ActiveQuest quest);
 

@@ -2,7 +2,7 @@ package com.artillexstudios.axquestboard;
 
 import com.artillexstudios.axapi.AxPlugin;
 import com.artillexstudios.axapi.config.Config;
-import com.artillexstudios.axapi.data.ThreadedQueue;
+import com.artillexstudios.axapi.executor.ThreadedQueue;
 import com.artillexstudios.axapi.utils.MessageUtils;
 import com.artillexstudios.axquestboard.database.Database;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
